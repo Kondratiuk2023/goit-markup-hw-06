@@ -27,6 +27,12 @@
           <a class="header-logo" href="./index.html"
             >Web <span class="logo-dark">Studio</span></a
           >
+          <button class="menu-btn" type="button" aria-label="Open menu button">
+            <svg class="menu-btn-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+          </button>
+
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="nav-link active" href="./index.html">Studio</a>
@@ -59,7 +65,7 @@
     <!-- Unique content -->
     <main>
       <!-- Hero section -->
-      <section class="hero-section section">
+      <section class="hero-section section hide">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <!-- <div class="hero-wrapper"> -->
@@ -68,7 +74,7 @@
         </div>
       </section>
       <!-- Feature section -->
-      <section class="feature-section section">
+      <section class="feature-section section hide">
         <div class="container">
           <h2 class="visually-hidden">Feature</h2>
           <ul class="feature-list">
@@ -131,6 +137,10 @@
             <li class="team-item">
               <img
                 class="user-img"
+                srcset="
+                  ./images/teams/mark_@1x_result.jpg,
+                  ./images/teams/mark_@2x_result.jpg
+                "
                 src="./images/teams/mark_1_result.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -380,7 +390,7 @@
         </div>
       </section>
       <!-- Portfolio section -->
-      <section class="portfolio-section section">
+      <section class="portfolio-section section hide">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -507,7 +517,7 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="wrapper-container container">
         <div class="footer-logo-text">
           <a class="footer-logo" href="./index.html"
@@ -593,7 +603,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop hide">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="modal close button">
           <svg class="modal-icon-btn" width="8" height="8">
@@ -673,6 +683,92 @@
 
           <button class="form-btn" type="submit" disabled>Send</button>
         </form>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu hide">
+      <button class="menu-btn" type="button" aria-label="Close menu button">
+        <svg class="menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link curent" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-wrapper">
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-contact accent" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-socials socials">
+          <li class="socials-elem">
+            <a
+              class="socials-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram site">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-elem">
+            <a
+              class="socials-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter site">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-elem">
+            <a
+              class="socials-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook site">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-elem">
+            <a
+              class="socials-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin site">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
