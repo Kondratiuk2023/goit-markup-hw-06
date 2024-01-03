@@ -65,16 +65,16 @@
     <!-- Unique content -->
     <main>
       <!-- Hero section -->
-      <section class="hero-section section hide">
+      <section class="hero-section section">
         <div class="hero-container container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions for&nbsp;Your Business</h1>
           <!-- <div class="hero-wrapper"> -->
           <button class="hero-section-btn" type="button">Order Service</button>
           <!-- </div> -->
         </div>
       </section>
       <!-- Feature section -->
-      <section class="feature-section section hide">
+      <section class="feature-section section">
         <div class="container">
           <h2 class="visually-hidden">Feature</h2>
           <ul class="feature-list">
@@ -138,8 +138,8 @@
               <img
                 class="user-img"
                 srcset="
-                  ./images/teams/mark_@1x_result.jpg,
-                  ./images/teams/mark_@2x_result.jpg
+                  ./images/teams/mark_@1x_result.jpg 1x,
+                  ./images/teams/mark_@2x_result.jpg 2x
                 "
                 src="./images/teams/mark_1_result.jpg"
                 alt="Mark Guerrero"
@@ -203,6 +203,10 @@
             <li class="team-item">
               <img
                 class="user-img"
+                srcset="
+                  ./images/teams/tom_@1x_result.jpg 1x,
+                  ./images/teams/tom_@2x_result.jpg 2x
+                "
                 src="./images/teams/tom_2_result.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -265,6 +269,10 @@
             <li class="team-item">
               <img
                 class="user-img"
+                srcset="
+                  ./images/teams/camila_@1x_result.jpg 1x,
+                  ./images/teams/camila_@2x_result.jpg 2x
+                "
                 src="./images/teams/camila_3_result.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -327,6 +335,10 @@
             <li class="team-item">
               <img
                 class="user-img"
+                srcset="
+                  ./images/teams/daniel_@1x_result.jpg 1x,
+                  ./images/teams/daniel_@2x_result.jpg 2x
+                "
                 src="./images/teams/daniel_4_result.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -390,7 +402,7 @@
         </div>
       </section>
       <!-- Portfolio section -->
-      <section class="portfolio-section section hide">
+      <section class="portfolio-section section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -517,9 +529,9 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="footer hide">
-      <div class="wrapper-container container">
-        <div class="footer-logo-text">
+    <footer class="web-footer">
+      <div class="web-footer-container container">
+        <div class="footer-top">
           <a class="footer-logo" href="./index.html"
             >Web <span class="logo-light">Studio</span></a
           >
@@ -581,19 +593,19 @@
             </li>
           </ul>
         </div>
-        <div class="footer-wrapper">
-          <p class="wrapper-caption">Subscribe</p>
-          <form class="subscribe-form" name="form-subscribe">
-            <label class="subscribe-form-field">
+        <div class="web-footer-bottom">
+          <p class="web-footer-caption">Subscribe</p>
+          <form class="web-footer-form" name="footer form">
+            <label class="web-footer-label">
               <input
-                class="subscribe-form-input"
+                class="web-footer-input"
                 type="email"
-                name="subscribe-form-email"
+                name="form-email"
                 placeholder="E-mail" />
             </label>
-            <button class="subscribe-form-btn" type="submit">
+            <button class="web-footer-btn" type="submit">
               Subscribe
-              <svg class="subscribe-form-icon" width="24" height="24">
+              <svg class="web-footer-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame"></use>
               </svg>
             </button>
@@ -676,8 +688,10 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="form-agreement-link" href="">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="form-agreement-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -705,71 +719,69 @@
         </li>
       </ul>
 
-      <div class="mobile-menu-wrapper">
-        <ul class="mobile-menu-contacts">
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-contact accent" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-contact accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
 
-        <ul class="mobile-menu-socials socials">
-          <li class="socials-elem">
-            <a
-              class="socials-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram site">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-elem">
-            <a
-              class="socials-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter site">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-elem">
-            <a
-              class="socials-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook site">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-elem">
-            <a
-              class="socials-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Linkedin site">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="mobile-menu-socials socials">
+        <li class="socials-elem">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram site">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-elem">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter site">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-elem">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook site">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-elem">
+          <a
+            class="socials-link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin site">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
